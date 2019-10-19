@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!--Declaracion del tipo de documento -->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"> <!--Lenguaje que utiliza html y ente que regula las normas internacionales-->
+
+<head>
+    <meta charset="utf-8" /> <!--(meta) referencia sobre la página: autor, título, fecha, palabras clave,etc. (utf-8): Codigo Del Latin-->
+    <title>Registro Docentes</title><!--Titulo que aparecera en la pestaña del navegador-->
+    <link rel="shortcut icon" href="iconoPW.ico" /><!--(rel):atributo que enlaza dos documentos (shorcut icon):icono de pagina (href):atributo que se utiliza para indicar un URL-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="Estilo1.css"> <!--Se hace el enlace de una stylesheet (lista de estilos) de un URL de una pagina web-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- Custom styles for this template -->
+   <link href="css/shop-homepage.css" rel="stylesheet">
+
+    <style>
+    * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: rgb(0, 140, 255);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+    </style>
+
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+     <img src="imagenes/newton.png" height="80" width="80">
+     CENTRO DE ESTUDIOS NEWTON
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    </div>
+  </nav>
+
+    <!--(Grid): es una cuadrícula con varios elementos que comparten una categoría-->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+
+        <form id="formulario" name="formulario">
+                
+            <div class="container">
+
+            <hr><hr><hr>
+                  
+                  <h1>DATOS DEL DOCENTE</h1>
+
+                  <hr>
+
+                  <label><b>NOMBRE(S):</b></label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre del alumno." required pattern="[A-Za-z, ' ']+"
+                  title="Unicamente se permiten letras en mayuscula y minuscula.">
+
+                  <label><b>APELLIDO PATERNO:</b></label>
+                  <input type="text" id="apellidoP" name="apellidoP" placeholder="Ingresa el apellido paterno del alumno." required pattern="[A-Za-z, ' ']+"
+                  title="Unicamente se permiten letras en mayuscula y minuscula.">
+
+                  <label><b>APELLIDO MATERNO:</b></label>
+                  <input type="text" id="apellidoM" name="apellidoM" placeholder="Ingresa el apellido paterno del alumno." required pattern="[A-Za-z, ' ']+"
+                  title="Unicamente se permiten letras en mayuscula y minuscula.">
+
+                  <label><b>ALUMNO ASIGNADO:</b></label>
+                  <input type="text" id="nombreA" name="nombreA" placeholder="Ingresa el nombre del alumno." required pattern="[A-Za-z, ' ']+"
+                  title="Unicamente se permiten letras en mayuscula y minuscula.">
+
+                  <label><b>MATERIA ASIGNADA:</b></label>
+                  <select  required>
+                  <option select>Elige la carrera...</option>
+                <option value="Asistente Educativo">Asistente Educativo</option> 
+                <option value="Reparacion de Celulares">Reparacion de Celulares</option>
+                <option value="Cultura de belleza">Cultura de belleza</option>
+                <option value="Computacion">Computacion</option>
+                <option value="Preparatoria">Preparatoria</option>
+                <option value="Secundaria">Secundaria</option>
+                 </select>
+
+                 <label><b>CALIFICACION:</b></label>
+                  <select  required>
+                  <option select>Elige la calificacion...</option>
+                <option value="0">0</option> 
+                <option value="1">1</option> 
+                <option value="2">2</option> 
+                <option value="3">3</option> 
+                <option value="4">4</option> 
+                <option value="5">5</option> 
+                <option value="6">6</option> 
+                <option value="7">7</option> 
+                <option value="8">8</option> 
+                <option value="9">9</option> 
+                <option value="10">10</option>
+                
+                 </select>
+
+                 <label><b>OBSERVACIONES:</b></label>
+                  <input type="text" id="observacion" name="observacion" placeholder="Ingresa una opinion (opcional)." pattern="[A-Za-z, ' ']+"
+                  title="Unicamente se permiten letras en mayuscula y minuscula.">
+                  <hr>
+
+                  <input type="submit" class="registerbtn" value="ENVIAR DATOS.">"
+                </div>
+              </form>       
+    </div>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+</body>
+</html>
